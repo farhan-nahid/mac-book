@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Farhan Ahmed Nahid" />
+    <meta
+      name="description"
+      content="It is a simple e-commerce type website. In this  "
+    />
+    <title>Mac Book - Pro</title>
+    <!-- external css file link -->
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- website main section start -->
+      <section id="main__section">
+        <!-- image part start -->
+        <div class="mac__image">
+          <img src="./assets/images/mac.png" alt="mac" />
+        </div>
+        <!-- image part end -->
+
+        <!-- content part start -->
+        <div class="mac__content">
+          <h1>Customize your Blue 24 inch iMac with Apple M1 CHIP</h1>
+          <p>
+            Apple M1 CHIP with 8-core CPU with 4 performance cores and 4
+            efficiency cores, 7-core GPU, and 16-core Neural Engine 8-GB unified
+            memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse.
+            Magic Keyboard US English.
+          </p>
+
+          <div class="mac__configuration">
+            <!-- memory button section -->
+            <div class="memory">
+              <h3>Memory</h3>
+              <div class="button__container">
+                <button class="main__button">8GB unified Memory</button>
+                <button class="main__button">16GB unified Memory</button>
+              </div>
+            </div>
+            <!-- storage buttons section -->
+            <div class="storage">
+              <h3>Storage</h3>
+              <div class="button__container">
+                <button class="main__button">256GB SSD Storage</button>
+                <button class="main__button">512GB SSD Storage</button>
+                <button class="main__button">1TB SSD Storage</button>
+              </div>
+            </div>
+            <!-- delivery cost buttons section -->
+            <div class="delivery__cost">
+              <h3>Choose Your Delivery Option</h3>
+              <div class="button__container">
+                <button class="main__button">Friday, Aug 25 FREE Prime Delivery</button>
+                <button class="main__button">Friday, Aug 21 Delivery Charge $20</button>
+              </div>
+            </div>
+            <!-- calculate total in table section -->
+            <table>
+              <tbody>
+                <tr>
+                  <td class="table__title">Best Price</td>
+                  <td class="table__number">$1299</td>
+                </tr>
+                <tr>
+                  <td class="table__title">Extra Memory Cost</td>
+                  <td class="table__number">$0</td>
+                </tr>
+                <tr>
+                  <td class="table__title">Extra Storage Cost</td>
+                  <td class="table__number">$0</td>
+                </tr>
+                <tr>
+                  <td class="table__title border__none">Delivery Charge</td>
+                  <td class="table__number border__none">$0</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="table__total">Total Cost</td>
+                  <td class="total__number">$1299</td>
+                </tr>
+              </tfoot>
+            </table>
+            <!-- promo code section -->
+            <div class="promo__code">
+              <h3>Add Promo Code</h3>
+              <input type="text" id="promo__code" placeholder="Put Your Promo Code" />
+              <button id="promo__code__button">Apply</button>
+            </div>
+          </div>
+        </div>
+        <!-- content part end -->
+      </section>
+      <!-- website main section end -->
+
+      <!-- total cost section start -->
+      <section class="total__cost">
+        <h1>Total: $1299</h1>
+      </section>
+      <!-- total cost section end -->
+    </main>
+
+    <!-- external javaScript file link -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

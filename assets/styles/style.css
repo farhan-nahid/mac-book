@@ -1,0 +1,229 @@
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: aqua;
+}
+
+:root {
+  --black-color: #000000c5;
+  --white-color: #ffffffff;
+  --danger-color: #dc3545;
+  --transparent-color: rgb(204, 203, 203);
+}
+
+body {
+  font-family: "Glory", sans-serif;
+  background-image: linear-gradient(
+      112.5deg,
+      rgba(232, 232, 232, 0.03) 0%,
+      rgba(232, 232, 232, 0.03) 2%,
+      rgba(231, 231, 231, 0.03) 2%,
+      rgba(231, 231, 231, 0.03) 4%,
+      rgba(231, 231, 231, 0.03) 4%,
+      rgba(231, 231, 231, 0.03) 11%,
+      rgba(2, 2, 2, 0.03) 11%,
+      rgba(2, 2, 2, 0.03) 67%,
+      rgba(231, 231, 231, 0.03) 67%,
+      rgba(231, 231, 231, 0.03) 90%,
+      rgba(111, 111, 111, 0.03) 90%,
+      rgba(111, 111, 111, 0.03) 100%
+    ),
+    linear-gradient(
+      157.5deg,
+      rgba(210, 210, 210, 0.03) 0%,
+      rgba(210, 210, 210, 0.03) 17%,
+      rgba(254, 254, 254, 0.03) 17%,
+      rgba(254, 254, 254, 0.03) 18%,
+      rgba(96, 96, 96, 0.03) 18%,
+      rgba(96, 96, 96, 0.03) 44%,
+      rgba(159, 159, 159, 0.03) 44%,
+      rgba(159, 159, 159, 0.03) 70%,
+      rgba(24, 24, 24, 0.03) 70%,
+      rgba(24, 24, 24, 0.03) 82%,
+      rgba(16, 16, 16, 0.03) 82%,
+      rgba(16, 16, 16, 0.03) 100%
+    ),
+    linear-gradient(
+      22.5deg,
+      rgba(47, 47, 47, 0.03) 0%,
+      rgba(47, 47, 47, 0.03) 32%,
+      rgba(124, 124, 124, 0.03) 32%,
+      rgba(124, 124, 124, 0.03) 40%,
+      rgba(200, 200, 200, 0.03) 40%,
+      rgba(200, 200, 200, 0.03) 42%,
+      rgba(16, 16, 16, 0.03) 42%,
+      rgba(16, 16, 16, 0.03) 64%,
+      rgba(243, 243, 243, 0.03) 64%,
+      rgba(243, 243, 243, 0.03) 94%,
+      rgba(93, 93, 93, 0.03) 94%,
+      rgba(93, 93, 93, 0.03) 100%
+    ),
+    linear-gradient(90deg, var(--white-color), var(--white-color));
+}
+
+h1,
+h3 {
+  color: var(--black-color);
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#main__section {
+  margin: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+/* image css */
+
+.mac__image img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* mac content css */
+
+.mac__content h1 {
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.mac__content p {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* mac configuration css */
+
+.mac__configuration {
+  margin-top: 25px;
+}
+
+.mac__configuration h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.memory,
+.storage,
+.delivery__cost {
+  margin-bottom: 20px;
+}
+
+/* button css */
+
+.mac__configuration .main__button {
+  padding: 10px 20px;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid var(--black-color);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.mac__configuration .main__button:hover {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+/* table css */
+
+table {
+  margin: 35px 0;
+}
+
+table > tbody td {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--transparent-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+table > tbody .border__none {
+  border-bottom: none;
+}
+
+table > tbody .table__title {
+  width: 250px;
+}
+
+table > tbody .table__number {
+  width: 100px;
+  padding: 10px 0;
+}
+
+table > tfoot td {
+  border-top: 1px solid var(--black-color);
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+table > tfoot .table__total {
+  width: 250px;
+}
+
+table > tfoot .total__number {
+  width: 100px;
+}
+
+/* apply promo code css */
+
+.promo__code input {
+  border: 2px solid var(--transparent-color);
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  color: var(--black-color);
+  font-family: inherit;
+}
+
+.promo__code input:focus {
+  outline: 0;
+  border: 3px solid var(--transparent-color);
+}
+
+#promo__code__button {
+  padding: 10px 20px;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid var(--danger-color);
+  color: var(--danger-color);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+#promo__code__button:hover {
+  color: var(--white-color);
+  background-color: var(--danger-color);
+}
+
+/* total cost section css */
+
+.total__cost {
+  border-top: 1px solid var(--black-color);
+}
+
+.total__cost h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: var(--black-color);
+}
