@@ -10,3 +10,27 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .mac__content h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .mac__content p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .mac__configuration h3 {
+    font-size: 18px;
+  }
+
+  table {
+    margin: 25px 0;
+  }
+
+  .total__cost h1 {
+    font-size: 30px;
+  }
+}
