@@ -78,7 +78,6 @@ promoCodeButton.addEventListener("click", function () {
   const total = Number(totalCost.innerText);
   if (promoCodeInput.value == promoCode) {
     const discountPrice = total - Math.round(total * 0.2);
-    totalCost.innerText = discountPrice;
     footerTotal.innerText = discountPrice;
     promoCodeInput.value = "";
   } else {
