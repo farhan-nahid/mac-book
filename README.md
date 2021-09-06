@@ -16,7 +16,7 @@
 
 ### Live Site
 
-[Live Link](https://copa-america-2021.vercel.app/)
+[Live Link](https://mac-boook-pro.netlify.app/)
 
 ### Technology
 
@@ -30,3 +30,4 @@
 - [x] VS CODE
 - [x] GIT
 - [x] GITHUB
+
