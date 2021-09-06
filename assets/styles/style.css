@@ -10,7 +10,8 @@
 }
 
 ::selection {
-  background-color: aqua;
+  background-color: var(--danger-color);
+  color: var(--white-color);
 }
 
 :root {
@@ -91,7 +92,8 @@ h3 {
 
 .mac__image img {
   width: 90%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* mac content css */
@@ -153,6 +155,7 @@ table > tbody td {
   border-bottom: 1px solid var(--transparent-color);
   font-weight: 600;
   font-size: 18px;
+  border-collapse: collapse;
 }
 
 table > tbody .border__none {
@@ -173,6 +176,7 @@ table > tfoot td {
   padding: 10px 0;
   font-weight: 600;
   font-size: 18px;
+  border-collapse: collapse;
 }
 
 table > tfoot .table__total {
@@ -192,6 +196,7 @@ table > tfoot .total__number {
   border-radius: 5px;
   color: var(--black-color);
   font-family: inherit;
+  font-size: 18px;
 }
 
 .promo__code input:focus {
@@ -203,6 +208,7 @@ table > tfoot .total__number {
   padding: 10px 20px;
   background-color: transparent;
   outline: 0;
+  font-size: 18px;
   cursor: pointer;
   border: 1px solid var(--danger-color);
   color: var(--danger-color);
@@ -226,4 +232,5 @@ table > tfoot .total__number {
   text-align: center;
   font-size: 40px;
   color: var(--black-color);
+  margin-bottom: 30px;
 }

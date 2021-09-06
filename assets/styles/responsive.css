@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1150px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #main__section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

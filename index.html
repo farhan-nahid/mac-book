@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Farhan Ahmed Nahid" />
-    <meta
-      name="description"
-      content="It is a simple e-commerce type website. In this  "
-    />
     <title>Mac Book - Pro</title>
     <!-- external css file link -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/responsive.css" />
   </head>
   <body>
     <main class="container">
@@ -38,25 +35,60 @@
             <div class="memory">
               <h3>Memory</h3>
               <div class="button__container">
-                <button class="main__button">8GB unified Memory</button>
-                <button class="main__button">16GB unified Memory</button>
+                <button
+                  class="main__button"
+                  onclick="handleMemoryPrice('eight__gb')"
+                >
+                  8GB unified Memory
+                </button>
+                <button
+                  class="main__button"
+                  onclick="handleMemoryPrice('sixteen__gb')"
+                >
+                  16GB unified Memory
+                </button>
               </div>
             </div>
             <!-- storage buttons section -->
             <div class="storage">
               <h3>Storage</h3>
               <div class="button__container">
-                <button class="main__button">256GB SSD Storage</button>
-                <button class="main__button">512GB SSD Storage</button>
-                <button class="main__button">1TB SSD Storage</button>
+                <button
+                  class="main__button"
+                  onclick="handleStoragePrice('ssd__256gb')"
+                >
+                  256GB SSD Storage
+                </button>
+                <button
+                  class="main__button"
+                  onclick="handleStoragePrice('ssd__512gb')"
+                >
+                  512GB SSD Storage
+                </button>
+                <button
+                  class="main__button"
+                  onclick="handleStoragePrice('ssd__1tb')"
+                >
+                  1TB SSD Storage
+                </button>
               </div>
             </div>
             <!-- delivery cost buttons section -->
             <div class="delivery__cost">
               <h3>Choose Your Delivery Option</h3>
               <div class="button__container">
-                <button class="main__button">Friday, Aug 25 FREE Prime Delivery</button>
-                <button class="main__button">Friday, Aug 21 Delivery Charge $20</button>
+                <button
+                  class="main__button"
+                  onclick="handleDeliveryCost('free')"
+                >
+                  Friday, Aug 25 FREE Prime Delivery
+                </button>
+                <button
+                  class="main__button"
+                  onclick="handleDeliveryCost('paid')"
+                >
+                  Friday, Aug 21 Delivery Charge $20
+                </button>
               </div>
             </div>
             <!-- calculate total in table section -->
@@ -64,32 +96,46 @@
               <tbody>
                 <tr>
                   <td class="table__title">Best Price</td>
-                  <td class="table__number">$1299</td>
+                  <td class="table__number">
+                    $<span id="best__price">1299</span>
+                  </td>
                 </tr>
                 <tr>
                   <td class="table__title">Extra Memory Cost</td>
-                  <td class="table__number">$0</td>
+                  <td class="table__number">
+                    $<span id="memory__cost">0</span>
+                  </td>
                 </tr>
                 <tr>
                   <td class="table__title">Extra Storage Cost</td>
-                  <td class="table__number">$0</td>
+                  <td class="table__number">
+                    $<span id="storage__cost">0</span>
+                  </td>
                 </tr>
                 <tr>
                   <td class="table__title border__none">Delivery Charge</td>
-                  <td class="table__number border__none">$0</td>
+                  <td class="table__number border__none">
+                    $<span id="delivery__cost">0</span>
+                  </td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
                   <td class="table__total">Total Cost</td>
-                  <td class="total__number">$1299</td>
+                  <td class="total__number">
+                    $<span id="total__cost">1299</span>
+                  </td>
                 </tr>
               </tfoot>
             </table>
             <!-- promo code section -->
             <div class="promo__code">
               <h3>Add Promo Code</h3>
-              <input type="text" id="promo__code" placeholder="Put Your Promo Code" />
+              <input
+                type="text"
+                id="promo__code__input"
+                placeholder="Put Your Promo Code"
+              />
               <button id="promo__code__button">Apply</button>
             </div>
           </div>
@@ -100,7 +146,7 @@
 
       <!-- total cost section start -->
       <section class="total__cost">
-        <h1>Total: $1299</h1>
+        <h1>Total: $<span id="footer__total">1299</span></h1>
       </section>
       <!-- total cost section end -->
     </main>
