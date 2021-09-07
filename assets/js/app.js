@@ -1,7 +1,7 @@
 // all configuration cost
 
-const Memory8GB = 0;
-const Memory16GB = 180;
+const Memory8Gb = 0;
+const Memory16Gb = 180;
 const ssd256Gb = 0;
 const ssd512Gb = 100;
 const ssd1Tb = 180;
@@ -16,27 +16,29 @@ const memoryCost = document.getElementById("memory__cost");
 const storageCost = document.getElementById("storage__cost");
 const deliveryCost = document.getElementById("delivery__cost");
 const totalCost = document.getElementById("total__cost");
+const promoCodeInput = document.getElementById("promo__code__input");
+const promoCodeButton = document.getElementById("promo__code__button");
 const footerTotal = document.getElementById("footer__total");
 
 // memory price function
 
 function handleMemoryPrice(memory) {
   if (memory == "eight__gb") {
-    memoryCost.innerText = Memory8GB;
+    memoryCost.innerText = Memory8Gb;
     handleCalculateTotalCost();
   } else {
-    memoryCost.innerText = Memory16GB;
+    memoryCost.innerText = Memory16Gb;
     handleCalculateTotalCost();
   }
 }
 
-// space price function
+// storage price function
 
-function handleStoragePrice(space) {
-  if (space == "ssd__256gb") {
+function handleStoragePrice(storage) {
+  if (storage == "ssd__256gb") {
     storageCost.innerText = ssd256Gb;
     handleCalculateTotalCost();
-  } else if (space == "ssd__512gb") {
+  } else if (storage == "ssd__512gb") {
     storageCost.innerText = ssd512Gb;
     handleCalculateTotalCost();
   } else {
@@ -47,8 +49,8 @@ function handleStoragePrice(space) {
 
 // delivery cost function
 
-function handleDeliveryCost(isFree) {
-  if (isFree == "free") {
+function handleDeliveryCost(deliveryCharge) {
+  if (deliveryCharge == "free") {
     deliveryCost.innerText = freeDeliveryCost;
     handleCalculateTotalCost();
   } else {
@@ -72,8 +74,6 @@ function handleCalculateTotalCost() {
 
 // apply promo code function
 
-const promoCodeInput = document.getElementById("promo__code__input");
-const promoCodeButton = document.getElementById("promo__code__button");
 promoCodeButton.addEventListener("click", function () {
   const total = Number(totalCost.innerText);
   if (promoCodeInput.value == promoCode) {
@@ -81,7 +81,7 @@ promoCodeButton.addEventListener("click", function () {
     footerTotal.innerText = discountPrice;
     promoCodeInput.value = "";
   } else {
-    alert("Promo Code is not matched. please try again!!");
+    alert("Promo Code didn't Matched. Please Try Again!!");
     promoCodeInput.value = "";
   }
 });
