@@ -1,7 +1,7 @@
 // all configuration cost
 
-const Memory8Gb = 0;
-const Memory16Gb = 180;
+const memory8Gb = 0;
+const memory16Gb = 180;
 const ssd256Gb = 0;
 const ssd512Gb = 100;
 const ssd1Tb = 180;
@@ -24,10 +24,10 @@ const footerTotal = document.getElementById("footer__total");
 
 function handleMemoryPrice(memory) {
   if (memory == "eight__gb") {
-    memoryCost.innerText = Memory8Gb;
+    memoryCost.innerText = memory8Gb;
     handleCalculateTotalCost();
   } else {
-    memoryCost.innerText = Memory16Gb;
+    memoryCost.innerText = memory16Gb;
     handleCalculateTotalCost();
   }
 }
