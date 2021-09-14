@@ -33,7 +33,7 @@ const isSelected = (element) => {
   return element.classList.contains("selected");
 };
 
-// memory 16 gb
+// memory 8 gb
 
 eightGB.addEventListener("click", () => {
   if (!isSelected(eightGB)) {
