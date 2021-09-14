@@ -17,7 +17,6 @@
 
     <main class="container">
       <section id="main__section">
-
         <!-- image part start -->
 
         <div class="mac__image">
@@ -40,22 +39,15 @@
           <!-- mac configuration start -->
 
           <div class="mac__configuration">
-            
             <!-- memory buttons section start -->
 
             <div class="memory">
               <h3>Memory</h3>
               <div class="button__container">
-                <button
-                  class="main__button"
-                  onclick="handleMemoryPrice('eight__gb')"
-                >
+                <button class="main__button" id="eight__gb">
                   8GB unified Memory
                 </button>
-                <button
-                  class="main__button"
-                  onclick="handleMemoryPrice('sixteen__gb')"
-                >
+                <button class="main__button" id="sixteen__gb">
                   16GB unified Memory
                 </button>
               </div>
@@ -68,22 +60,13 @@
             <div class="storage">
               <h3>Storage</h3>
               <div class="button__container">
-                <button
-                  class="main__button"
-                  onclick="handleStoragePrice('ssd__256gb')"
-                >
+                <button class="main__button" id="ssd__256gb">
                   256GB SSD Storage
                 </button>
-                <button
-                  class="main__button"
-                  onclick="handleStoragePrice('ssd__512gb')"
-                >
+                <button class="main__button" id="ssd__512gb">
                   512GB SSD Storage
                 </button>
-                <button
-                  class="main__button"
-                  onclick="handleStoragePrice('ssd__1tb')"
-                >
+                <button class="main__button" id="ssd__1tb">
                   1TB SSD Storage
                 </button>
               </div>
@@ -96,16 +79,10 @@
             <div class="delivery__cost">
               <h3>Choose Your Delivery Option</h3>
               <div class="button__container">
-                <button
-                  class="main__button"
-                  onclick="handleDeliveryCost('free')"
-                >
+                <button class="main__button" id="free">
                   Friday, Aug 25 FREE Prime Delivery
                 </button>
-                <button
-                  class="main__button"
-                  onclick="handleDeliveryCost('paid')"
-                >
+                <button class="main__button" id="paid">
                   Friday, Aug 21 Delivery Charge $20
                 </button>
               </div>

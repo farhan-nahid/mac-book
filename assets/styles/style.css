@@ -73,7 +73,6 @@ body {
     linear-gradient(90deg, var(--white-color), var(--white-color));
 }
 
-
 .container {
   width: 1100px;
   margin: 0 auto;
@@ -237,4 +236,9 @@ table > tfoot .total__number {
   font-size: 40px;
   color: var(--black-color);
   margin-bottom: 30px;
+}
+
+.selected {
+  background-color: var(--black-color) !important;
+  color: var(--white-color) !important;
 }
