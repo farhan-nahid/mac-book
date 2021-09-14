@@ -34,3 +34,14 @@
     font-size: 30px;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .mac__content h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .total__cost h1 {
+    font-size: 30px;
+  }
+}

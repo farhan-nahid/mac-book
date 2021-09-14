@@ -145,7 +145,7 @@ promoCodeButton.addEventListener("click", function () {
 
 // memory price function
 
-function handleMemoryPrice(memory) {
+const handleMemoryPrice = (memory) => {
   if (memory == "eight__gb") {
     memoryCost.innerText = memory8Gb;
     handleCalculateTotalCost();
@@ -153,11 +153,11 @@ function handleMemoryPrice(memory) {
     memoryCost.innerText = memory16Gb;
     handleCalculateTotalCost();
   }
-}
+};
 
 // storage price function
 
-function handleStoragePrice(storage) {
+const handleStoragePrice = (storage) => {
   if (storage == "ssd__256gb") {
     storageCost.innerText = ssd256Gb;
     handleCalculateTotalCost();
@@ -168,11 +168,11 @@ function handleStoragePrice(storage) {
     storageCost.innerText = ssd1Tb;
     handleCalculateTotalCost();
   }
-}
+};
 
 // delivery cost function
 
-function handleDeliveryCost(deliveryCharge) {
+const handleDeliveryCost = (deliveryCharge) => {
   if (deliveryCharge == "free") {
     deliveryCost.innerText = freeDeliveryCost;
     handleCalculateTotalCost();
@@ -180,4 +180,4 @@ function handleDeliveryCost(deliveryCharge) {
     deliveryCost.innerText = paidDeliveryCost;
     handleCalculateTotalCost();
   }
-}
+};

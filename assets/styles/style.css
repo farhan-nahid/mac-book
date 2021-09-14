@@ -138,6 +138,7 @@ body {
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
   color: var(--black-color);
+  margin: 7px 10px 0 0;
 }
 
 .mac__configuration .main__button:hover {
@@ -149,45 +150,41 @@ body {
 
 table {
   margin: 35px 0;
+  border-collapse: collapse;
 }
 
-table > tbody td {
+table tbody td {
   padding: 10px 0;
   border-bottom: 1px solid var(--transparent-color);
-  font-weight: 600;
   font-size: 18px;
-  border-collapse: collapse;
   color: var(--black-color);
 }
 
-table > tbody .border__none {
-  border-bottom: none;
-}
-
-table > tbody .table__title {
+table tbody tr td:nth-child(1) {
   width: 250px;
+  font-weight: 700;
 }
 
-table > tbody .table__number {
+table tbody tr td:nth-child(2) {
   width: 100px;
-  padding: 10px 0;
+  font-weight: 900;
 }
 
-table > tfoot td {
-  border-top: 1px solid var(--black-color);
+table tfoot td {
   padding: 10px 0;
-  font-weight: 600;
+  border-top: 2px solid var(--black-color);
   font-size: 18px;
-  border-collapse: collapse;
   color: var(--black-color);
 }
 
-table > tfoot .table__total {
+table tfoot tr td:nth-child(1) {
   width: 250px;
+  font-weight: 700;
 }
 
-table > tfoot .total__number {
+table tfoot tr td:nth-child(2) {
   width: 100px;
+  font-weight: 900;
 }
 
 /* apply promo code css */
@@ -226,11 +223,11 @@ table > tfoot .total__number {
 
 /* total cost section css */
 
-.total__cost {
+footer {
   border-top: 1px solid var(--black-color);
 }
 
-.total__cost h1 {
+footer h1 {
   padding: 20px;
   text-align: center;
   font-size: 40px;
